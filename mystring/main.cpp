@@ -33,6 +33,17 @@ int main()
     b[0] = c;
     b[a.mystrlen() + 1] = '\0';
     b.print();
-    MyString m = b + 's';
+    MyString m = str1 + b;
     m.print();
+    cout << "\n\n\n";
+    MyString str4(70, "Gnome");
+    ++str4;
+    str4.print();
+    str4++;
+    str4.print();
+    MyString str5(move(str4));
+    cout << "\n\n\n";
+    str5.print();
+    cout << endl;
+    str4.print();
 }
